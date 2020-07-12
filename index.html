@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StopWatch(Assignment 8)</title>
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="StopW.css">
 </head>
-<link rel="stylesheet" href="StopW.css">
 <body>
-    <div class="stopwatch"></div>
-    <ul class="results"></ul>
-    <nav class="controls">
-        <a href="a" class="button" onclick="stopwatch.start()">Start</a>
-        <a href="a" class="button" onclick="stopwatch.stop()">Stop</a>
-        <a href="a" class="button" onclick="stopwatch.restart()">Restart</a>
-        <a href="a" class="button" onclick="window.location.reload()">Clear</a>
-    </nav>
-    <script src="StopW.js"></script>
+    <div class="container">
+        <h1 class="title">StopWatch</h1>
+        <h1 id="timerLabel">00:00:00</h1>
+        <input type="button" class="myButton" onclick="start()" value="START" id="startBtn">
+        <input type="button" class="myButton" onclick="stop()" value="STOP">
+        <input type="button" class="myButton" onclick="reset()" value="RESET">
+    </div>
+<script src="StopW.js"></script>
 </body>
+
 </html>

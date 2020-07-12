@@ -1,53 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
-html{
-    background: white;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+body {
+    background-color: gray;
 }
-
-.container{
-    width: 800px;
-    margin: 50px auto;
-}
-
-.controls {
-    text-align: center;
-    top: 1em;
-    width: 100%;
-}
-
-.button {
-    color: greenyellow;
-    font-size: 4vw;
-    margin: 0 0.2em;
-    text-decoration: none;
-    padding: 12px 20px;
-    background-color: skyblue;
-}
-
-.button:first-child{
-    margin-left: 0;
-}
-.button:last-child{
-    margin-right: 0;
-}
-.button.hover{
-    color: gray;
-}
-.stopwatch{
-    font-size: 20vw;
+.container {
+    margin-top: 100px;
     text-align: center;
 }
-.result{
-    border-color: lime;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.title{
+    font-size: 70px;
+}
+.title:hover{
+    color: Yellow;
+    transition: linear;
+}
+
+.title, .myButton {
+    font-family: 'Modak', cursive;
+    color: navy;
+}
+
+#timerLabel {
+    margin: 100px 0px;
+    color: #ffffff;
+}
+.myButton {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 30%;
+    background-color: gainsboro;
+    font-size: 20px;
+}
+
+.myButton:hover{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
 }
